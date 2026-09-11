@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Pangasinan — Travel Guide</title>
+    <meta name="description" content="Discover the beauty, culture, history, and unforgettable destinations of Pangasinan, Philippines — Hundred Islands, Manaoag Basilica, and Cape Bolinao Lighthouse." />
+    <meta name="theme-color" content="#1f4d3f" />
+    <!-- Inline SVG favicon — avoids the browser's automatic /favicon.ico
+         request 404ing, which Lighthouse's Best Practices audit flags as a
+         logged browser error. -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B4%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://commons.wikimedia.org" crossorigin />
+    <link rel="dns-prefetch" href="https://commons.wikimedia.org" />
+
+    <!-- Preload the hero image so the LCP element starts downloading immediately,
+         instead of waiting for React to render and insert the <img> tag. -->
+    <link
+      rel="preload"
+      as="image"
+      fetchpriority="high"
+      href="https://commons.wikimedia.org/wiki/Special:FilePath/Hundred%20Islands%20National%20Park.jpg?width=1600"
+      imagesrcset="https://commons.wikimedia.org/wiki/Special:FilePath/Hundred%20Islands%20National%20Park.jpg?width=640 640w, https://commons.wikimedia.org/wiki/Special:FilePath/Hundred%20Islands%20National%20Park.jpg?width=960 960w, https://commons.wikimedia.org/wiki/Special:FilePath/Hundred%20Islands%20National%20Park.jpg?width=1280 1280w, https://commons.wikimedia.org/wiki/Special:FilePath/Hundred%20Islands%20National%20Park.jpg?width=1600 1600w"
+      imagesizes="100vw"
+    />
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
